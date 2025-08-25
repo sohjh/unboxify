@@ -1,0 +1,397 @@
+* { /*(*) for whole*/
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right:8px;
+}
+
+header img {
+  float: left;
+}
+
+.nav-menu {
+  display: flex;              
+  justify-content: flex-end;  
+  align-items: center;
+  gap: 20px;                  
+  font-weight: bold;
+  font-size: 1em;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+.nav-menu a:link {
+  color: #000f22;
+}
+
+.nav-menu a:visited {
+  color: #1b3554;
+}
+
+.nav-menu a:hover {
+  color: #e60023;
+}
+
+.nav-main {
+  text-align: center;
+
+}
+
+.nav-main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;  
+}
+
+.nav-main a:link {
+  color: gray;
+}
+
+.nav-main a:visited {
+  color: darkgrey;
+}
+
+.nav-main a:hover {
+  color: #000f22;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-top: 8px;
+  display: block;
+  position: absolute;
+  background-color: #fcefcc;
+  padding: 8px 10px;
+  z-index: 1;
+  min-width: 210px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;                   
+  visibility: hidden;           
+  transform: translateY(10px);  
+  transition: opacity 0.3s ease,
+              transform 0.3s ease,
+              visibility 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  justify-content: flex-start;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.dropdown-content a:hover {
+  color: #e60023;    
+  transform: scale(1.02);
+  text-decoration: underline;
+}
+
+.dropdown-content img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #fffbef;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.footer {
+  text-transform: uppercase;
+}
+
+.footer-top {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.footer-bottom {
+  padding-top: 100px;
+  color: grey;
+  display: block;
+  height: 50px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.footer-top img {
+  width: 25px;
+  height: auto;
+  padding-left: 5px;
+}
+
+.footer-bottom img {
+  float: right;
+  width: 40px;
+  height: auto;
+}
+
+.product-row {
+  display: flex;
+  justify-content:center;
+  padding-top: 30px; 
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
+  color: #333;
+  font-size:  clamp(14px, 2vw, 20px);
+}
+
+.product-name {
+  justify-content: center;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 75px;
+}
+
+.product-name:hover {
+  color: #007bff;
+}
+
+.product-price {
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-price:hover {
+  color: #e60023;    
+  transform: scale(1.02);
+  text-decoration: underline;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.buynow {
+  text-align: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.buynow img {
+  height: 50%;
+  width: 50%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 30px;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
+  width: 90%;  
+  margin: 20px auto;            
+}
+
+.product-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.product-images img {
+  width: 35%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-info {
+  width: 100%;
+  padding-left: 25px;
+}
+
+.product-info .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e60023;
+  margin-bottom: 10px;
+}
+
+.product-info .description {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.product-details {
+  padding-top: 20px;
+}
+
+.product-details img {
+  width: 50%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-repeat {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.back {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 20px;     
+  padding-bottom: 60px;
+  color: #000f22;
+  position: absolute;
+}
+
+.back:link {
+  color: #000f22;
+}
+
+.back:visited {
+  color: #1b3554;
+}
+
+.back:hover {
+  color: #e60023;
+  text-decoration: underline;
+}
+
+.character {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.about-text {
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.full-width-img {
+  width: 100%;
+  height: auto;
+}
+
+.full-height-img {
+  max-width: 10%;
+  height: auto;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;         
+}
+
+.video-container video {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  position: fixed;
+  bottom: 12px;
+  right: 16px;
+  z-index: 1000;
+  background-color: #f6e2ad;
+  color: #1b3554;
+  font-size: 12px;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.character-name {
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 75px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.character-name:hover {
+  color: #e60023;
+}
+
+.navmenu-repeat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 125px;
+  padding-top: 20px;
+}
